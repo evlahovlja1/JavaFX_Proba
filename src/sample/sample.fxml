@@ -12,7 +12,7 @@
     </stylesheets>
 
     <Label text="Korisnicko ime:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="username" />
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="loginField" />
 
     <Label text="Sifra:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
     <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
