@@ -20,5 +20,7 @@
     <Button id="prijavaBtn" alignment="BOTTOM_LEFT" text="${controller.login}" GridPane.columnIndex="0" GridPane.columnSpan="2"
             GridPane.rowIndex="2" maxWidth="Infinity" onAction="#loginClick"/>
 
+    <Button GridPane.rowIndex="3" GridPane.columnIndex="0" text="novi prozor!" onAction="#otvoriNovi" />
+
     <padding><Insets bottom="10" left="10" right="10" top="10" /></padding>
 </GridPane>

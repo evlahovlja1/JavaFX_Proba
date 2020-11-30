@@ -3,7 +3,11 @@ package sample;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class Controller {
     public TextField loginField;
@@ -53,5 +57,13 @@ public class Controller {
         );
 
         loginField.textProperty().bindBidirectional(login);
+    }
+
+    public void otvoriNovi(ActionEvent actionEvent) throws Exception {
+        Stage myStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("noviProzor.fxml"));
+        myStage.setTitle("Novi prozor");
+        myStage.setScene(new Scene(root, 500, 500));
+        myStage.show();
     }
 }
