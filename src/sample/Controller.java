@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -8,9 +9,28 @@ import javafx.scene.control.TextField;
 
 public class Controller {
     public TextField username;
+    private SimpleStringProperty login;
+
+    public Controller() {
+        login = new SimpleStringProperty("Login");
+    }
+
+    public String getLogin() {
+        return login.get();
+    }
+
+    public SimpleStringProperty loginProperty() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login.set(login);
+    }
 
     public void loginClick(ActionEvent actionEvent) {
         System.out.println("Korisnicko ime: " + username.getText());
+        System.out.println("login glasi: " + login.get());
+        login.set("default");
     }
 
 
@@ -31,6 +51,6 @@ public class Controller {
                     username.getStyleClass().add("neispravnoPolje");
                 }
             }
-        });
+        );
     }
 }
