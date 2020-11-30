@@ -11,4 +11,7 @@
             fx:controller="sample.NoviController"
             prefHeight="400.0" prefWidth="600.0">
 
+
+    <Button text="Zatvori prozor, propuh je" onAction="#zatvoriProzorPropuhJe"/>
+
 </AnchorPane>
