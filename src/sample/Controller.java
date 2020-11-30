@@ -17,9 +17,7 @@ public class Controller {
     @FXML
     public void initialize() {
         //username.getStyleClass().add("neispravnoPolje");
-        username.textProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
+        username.textProperty().addListener((observableValue, s, t1) -> {
                 //System.out.printf("%s, %s\n", s, t1);
                 username.getStyleClass().removeAll("neispravnoPolje");
                 username.getStyleClass().removeAll("ispravnoPolje");
