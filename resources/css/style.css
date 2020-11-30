@@ -1,0 +1,11 @@
+#prijavaBtn {
+    -fx-background-color: lightskyblue;
+}
+
+.neispravnoPolje {
+    -fx-background-color: lightpink;
+}
+
+.ispravnoPolje {
+    -fx-background-color: lightgreen;
+}
